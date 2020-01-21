@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Zipcode</string>
+
+    <string name="person_details_cpf">CPF</string>
+    <string name="person_details_name">Nome</string>
+    <string name="person_details_birthDate">Data de nascimento</string>
+    <string name="person_details_photo">Foto</string>
+    <string name="image_import_error">Erro ao obter a imagem</string>
+    <string name="image_import_select_image">Nenhuma imagem foi selecionada</string>
+    <string name="image_import_required">Você precisa escolher uma foto</string>
+
+    <string name="required">Requerido</string>
+    <string name="cpf_invalid">CPF inválido</string>
+    <string name="date_invalid">Data inválida</string>
+    <string name="people_empty_list">Nenhuma pessoa cadastrada</string>
+
+</resources>

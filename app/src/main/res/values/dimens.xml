@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">20dp</dimen>
+    <dimen name="photo_size">128dp</dimen>
+    <dimen name="photo_size_item">32dp</dimen>
+    <dimen name="content_margin">15dp</dimen>
+
+    <dimen name="card_person_margin">5dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+</resources>
