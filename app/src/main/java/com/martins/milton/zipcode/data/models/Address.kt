@@ -1,15 +1,17 @@
 package com.martins.milton.zipcode.data.models
 
-import androidx.room.Entity
-import androidx.room.PrimaryKey
+import com.google.gson.annotations.SerializedName
 
-@Entity(tableName = "addresses")
 data class Address(
-    @PrimaryKey val zipCode: String,
-    var street: String,
-    var complement: String,
-    var number: String,
-    var neighborhood: String,
-    var uf: String,
-    var city: String
-)
+    @SerializedName("cep") val zipCode: String,
+    @SerializedName("logradouro") var street: String,
+    @SerializedName("complemento") var complement: String,
+    @SerializedName("bairro") var neighborhood: String,
+    @SerializedName("uf") var uf: String,
+    @SerializedName("localidade") var city: String,
+    var number: String
+) {
+    override fun toString(): String {
+        return "$street, $neighborhood, $complement, $city/$uf"
+    }
+}

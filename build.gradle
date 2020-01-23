@@ -36,4 +36,5 @@ ext {
     legacyVersion = '1.0.0'
     constraintlayoutVersion = '1.1.3'
     kotlinCoreVersion = '1.1.0'
+    retrofitVersion ='2.7.1'
 }

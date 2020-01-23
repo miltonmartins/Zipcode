@@ -13,5 +13,14 @@
     <string name="cpf_invalid">CPF inválido</string>
     <string name="date_invalid">Data inválida</string>
     <string name="people_empty_list">Nenhuma pessoa cadastrada</string>
-
+    <string name="person_remove_error">Erro ao tentar remover a pessoa</string>
+    <string name="person_new">Nova pessoa</string>
+    <string name="person_edit">Editar pessoa</string>
+    <string name="address_zipcode">Cep</string>
+    <string name="address">Endereço</string>
+    <string name="address_number">Número</string>
+    <string name="addresses">Endereços</string>
+    <string name="action_add_remove">Adicionar|Remover</string>
+    <string name="address_search_error">Erro ao buscar o endereço pelo cep</string>
+    <string name="action_add">Adicionar</string>
 </resources>

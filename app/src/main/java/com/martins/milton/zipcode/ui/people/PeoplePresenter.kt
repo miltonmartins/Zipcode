@@ -9,7 +9,7 @@ class PeoplePresenter(
     private val peopleView: PeopleContract.View
 ) : PeopleContract.Presenter {
     override fun deletePerson(person: Person) {
-        TODO("not implemented")
+        peopleRepository.deletePerson(person)
     }
 
     override fun getPeople() {

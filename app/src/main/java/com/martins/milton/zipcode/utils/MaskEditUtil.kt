@@ -7,7 +7,7 @@ import android.widget.EditText
 object MaskEditUtil {
     const val FORMAT_CPF = "###.###.###-##"
     const val FORMAT_DATE = "##/##/####"
-    //const val FORMAT_CEP = "#####-###"
+    const val FORMAT_CEP = "#####-###"
 
     fun mask(ediTxt: EditText, mask: String): TextWatcher {
         return object : TextWatcher {

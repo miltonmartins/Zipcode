@@ -6,9 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="vertical"
+    android:layout_marginBottom="20dp"
     tools:context=".ui.persondetails.PersonDetailsFragment">
 
     <LinearLayout
+        android:id="@+id/layout_person_details_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/content_margin"
@@ -37,30 +39,59 @@
 
         </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/person_details_name"
+            android:text="@string/person_details_name" />
+
         <EditText
             android:id="@+id/person_details_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/person_details_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
             android:maxLength="30"
             android:nextFocusUp="@id/person_details_cpf" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/person_details_cpf"
+            android:text="@string/person_details_cpf" />
 
         <EditText
             android:id="@+id/person_details_cpf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusable="true"
-            android:hint="@string/person_details_cpf"
+            android:importantForAutofill="no"
             android:inputType="number"
             android:maxLength="14"
             android:nextFocusUp="@id/person_details_birthDate" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/person_details_birthDate"
+            android:text="@string/person_details_birthDate" />
 
         <EditText
             android:id="@+id/person_details_birthDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/person_details_birthDate"
+            android:importantForAutofill="no"
             android:inputType="date"
             android:maxLength="10" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/addresses"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold" />
+
     </LinearLayout>
 </ScrollView>

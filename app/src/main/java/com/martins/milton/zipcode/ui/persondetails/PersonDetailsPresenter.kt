@@ -18,10 +18,6 @@ class PersonDetailsPresenter(
         personDetailsView.navigateToPeopleList()
     }
 
-    override fun deletePerson(person: Person) {
-        peopleRepository.deletePerson(person)
-    }
-
     override fun getPerson(cpf: String) {
         peopleRepository.getPerson(cpf, object : DataResult.Single {
             override fun <T> onDataLoaded(data: T) = personDetailsView.showPerson(data as Person)

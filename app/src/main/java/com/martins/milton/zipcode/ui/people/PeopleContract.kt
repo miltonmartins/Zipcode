@@ -7,11 +7,12 @@ import com.martins.milton.zipcode.ui.base.BaseView
 interface PeopleContract {
 
     interface View : BaseView<Presenter> {
-        fun setupAddButton()
+        fun onClickAddMenu()
         fun loadPeople()
         fun showPeople(people: List<Person>)
         fun showEmptyList()
         fun hideEmptyList()
+        fun removePerson(index: Int)
     }
 
     interface Presenter : BasePresenter {
